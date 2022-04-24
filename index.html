@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>스터디 과목 랜덤 뽑기</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>과목 랜덤 뽑기</h1>
+
+    <label for="username">이름</label>
+    <input type="text" id="username" placeholder="이름을 입력하세요." />
+
+    <ul>
+      <li>
+        <input type="checkbox" id="computerArchitecture" />
+        <label for="computerArchitecture">컴퓨터구조</label>
+      </li>
+      <li>
+        <input type="checkbox" id="dataStructure" />
+        <label for="dataStructure">자료구조</label>
+      </li>
+      <li>
+        <input type="checkbox" id="operatingSystem" />
+        <label for="operatingSystem">운영체제</label>
+      </li>
+      <li>
+        <input type="checkbox" id="database" />
+        <label for="database">데이터베이스</label>
+      </li>
+      <li>
+        <input type="checkbox" id="network" />
+        <label for="network">네트워크</label>
+      </li>
+      <li>
+        <input type="checkbox" id="swEngineering" />
+        <label for="swEngineering">SW엔지니어링</label>
+      </li>
+    </ul>
+
+    <button id="pick">뽑기</button>
+    <button id="reset">리셋</button>
+
+    <div id="result"></div>
+    <div id="log"></div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
