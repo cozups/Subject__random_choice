@@ -35,7 +35,7 @@ function subjectEventHandler(e) {
 }
 
 function printLog() {
-  const content = log.map(l => `<li>${l.name}: ${l.subject}</li>`).join("");
+  const content = log.map(l => `<li class="logElement">${l.name}: ${l.subject}</li>`).join("");
 
   loggingArea.innerHTML = content;
 }
