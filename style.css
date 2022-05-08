@@ -2,4 +2,73 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.inputArea {
+  margin: 20px;
+}
+
+ul {
+  margin: 20px;
+}
+
+ul li {
+  display: inline;
+  margin-left: 10px;
+}
+
+li label {
+  font-size: 18px;
+}
+
+#result {
+  display: inline-block;
+  width: 700px;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  margin: 20px;
+  border: 8px solid #f2f2f2;
+  border-radius: 50%;
+}
+
+#log {
+  height: 200px;
+  margin: 20px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 200px;
+}
+
+.title {
+  border: 8px solid black;
+  border-radius: 50px;
+  margin: 20px;
+  padding: 10px 30px;
+}
+
+button {
+  width: 70px;
+  height: 30px;
+  background-color: #4b7be5;
+  border: none;
+  color: white;
+  border-radius: 15px;
+}
+
+.inputArea input {
+  padding: 5px;
+  border-radius: 6px;
+  font-size: 16px;
 }

@@ -63,7 +63,6 @@ function resetHandler() {
 
   subjects.forEach(item => (item.children[0].checked = false));
   result.innerHTML = "";
-  loggingArea.innerHTML = "";
 }
 
 for (let i = 0; i < subjects.length; i++) {
