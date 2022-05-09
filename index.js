@@ -1,7 +1,8 @@
 let selectedSubjectList = [];
 
 const inputUserName = document.querySelector("#username");
-const subjects = document.querySelectorAll("ul li");
+const subjects = document.querySelectorAll("ul li input");
+console.log(subjects);
 const pickButton = document.querySelector("#pick");
 const resetButton = document.querySelector("#reset");
 const result = document.querySelector("#result");
@@ -22,16 +23,14 @@ const subjectList = {
 };
 
 function subjectEventHandler(e) {
-  e.preventDefault();
-
-  const input = this.children[0];
-  input.checked = input.checked === true ? false : true;
+  const input = this;
 
   if (input.checked) {
     selectedSubjectList.push(input.id);
   } else {
     selectedSubjectList = selectedSubjectList.filter(sub => sub !== input.id);
   }
+  console.log(selectedSubjectList);
 }
 
 function printLog() {
@@ -61,7 +60,7 @@ function pickSubject() {
 function resetHandler() {
   selectedSubjectList = [];
 
-  subjects.forEach(item => (item.children[0].checked = false));
+  subjects.forEach(item => (item.checked = false));
   result.innerHTML = "";
 }
 

@@ -6,11 +6,14 @@
 }
 
 body {
+  width: 100%;
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   background: #feb139;
+  margin: 0 auto;
 }
 
 .inputArea {
